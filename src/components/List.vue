@@ -9,18 +9,34 @@
             <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
             <label for="mike">Mike</label>
             <br>
-            <span>Checked names: {{ checkedNames }}</span>
+            <span>Checked names: {{ checkedNames[0]}} {{ checkedNames[1]}} {{ checkedNames[2]}}</span>
         </div>
-  </div>
+  </div>    
 </template>
 <script>
 export default {
-    name: 'list',
-    new Vue({
-        el: '#example-3',
-        data: {
-            checkedNames: []
-        }
-    })
-}
+  name: "list",
+  data() {
+    return {
+      checkedNames: []
+    };
+  },
+  methods: {
+    handleInput: function(e) {
+      console.log(this);
+      console.log(e);
+    }
+  }
+};
 </script>
+
+<style scoped>
+.list {
+  padding: 0px 20px 0px 20px;
+  font-size: 1.3em;
+  background-color: #e0edf4;
+  border-left: 5px solid #3eb3f6;
+  margin-bottom: 2px;
+  color: #293546;
+}
+</style>

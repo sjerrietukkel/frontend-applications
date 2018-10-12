@@ -23,7 +23,7 @@ export default {
 
 <style>
 body {
-  background-color: #eeeeee;
+  background-color: #c9c9c9;
   font-family: "Montserrat", sans-serif;
   display: grid;
   grid-template-rows: auto;
@@ -32,7 +32,7 @@ body {
 }
 
 #app {
-  width: 600px;
+  width: 800px;
 }
 
 nav {
@@ -42,9 +42,9 @@ nav {
 nav a {
   padding: 10px;
   text-decoration: none;
-  background: #fff;
+  background: #293546;
   border-radius: 3px;
-  color: rgb(0, 110, 255);
+  color: #a6e0a6;
   font-weight: bold;
   margin-right: 15px;
 }
