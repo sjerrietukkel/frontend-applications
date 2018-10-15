@@ -1,8 +1,8 @@
 <template>
   <div id="app">
       <nav>
-        <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
+        <router-link to="/">Skills</router-link>
         <router-link to="/contact">Contact</router-link>
         <router-link to="/list">List</router-link>
       </nav>
@@ -34,13 +34,25 @@ body {
 #app {
   width: 800px;
 }
-
+/*
 nav {
   padding: 20px 20px 20px 0;
+}
+*/
+
+nav {
+  height: 100%; /* 100% Full-height */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #293546; /* Black*/
+  padding-top: 60px; /* Place content 60px from the top */
 }
 
 nav a {
   padding: 10px;
+  display: block;
   text-decoration: none;
   background: #293546;
   border-radius: 3px;
