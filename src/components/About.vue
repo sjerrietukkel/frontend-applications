@@ -1,6 +1,18 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali...</p>
+    <h1>Risico Percentage</h1>
+    <span class="dot"></span>
+    <h2>3.74%</h2>
   </div>
 </template>
+
+<style>
+.dot {
+  height: 200px;
+  width: 200px;
+  background-color: none;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid;
+}
+</style>

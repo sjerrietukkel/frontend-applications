@@ -1,10 +1,10 @@
 <template>
   <div id="app">
       <nav>
-        <router-link to="/about">About</router-link>
-        <router-link to="/">Skills</router-link>
-        <router-link to="/contact">Contact</router-link>
-        <router-link to="/list">List</router-link>
+        <router-link to="/about">Gezin 1</router-link>
+        <router-link to="/">Gezin 2</router-link>
+        <router-link to="/contact">Gezin 3</router-link>
+        <router-link to="/list">Gezin 4</router-link>
       </nav>
     <router-view/>
   </div>
@@ -13,6 +13,7 @@
 <script>
 import skills from "./components/Skills.vue";
 import list from "./components/List";
+import country from "./components/Contact";
 export default {
   name: "app",
   components: {
@@ -23,7 +24,7 @@ export default {
 
 <style>
 body {
-  background-color: #c9c9c9;
+  background-color: #e6e6e6;
   font-family: "Montserrat", sans-serif;
   display: grid;
   grid-template-rows: auto;
@@ -42,6 +43,7 @@ nav {
 
 nav {
   height: 100%; /* 100% Full-height */
+  width: 250px;
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -56,7 +58,7 @@ nav a {
   text-decoration: none;
   background: #293546;
   border-radius: 3px;
-  color: #a6e0a6;
+  color: white;
   font-weight: bold;
   margin-right: 15px;
 }
