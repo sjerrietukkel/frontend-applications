@@ -1,41 +1,42 @@
 <template>
-  <v-container>
-    <v-layout row >
-      <v-flex>
-        <h4>Gun me deze.</h4>
-      </v-flex>
-    </v-layout>
-    <v-layout row>
-      <v-flex xs12>
-        <form>
-          <v-layout row>
-            <v-flex xs12 sm6 offset-sm3>
-              <v-text-field
-                name="title"
-                label='Title'
-                id='title'
-                required>
-              </v-text-field>
-            </v-flex>
-            <v-flex xs12 sm6 offset-sm3>
-              <v-textarea
-                box
-                value="omschrijving"
-                label='Omschrijving'
-                id='omschrijving'>
-              </v-textarea>
-            </v-flex>
-
-          </v-layout>
-        </form>
-      </v-flex>
-    </v-layout> 
-  </v-container>
-  <h4>JOOOEEE</h4>
+  <div class="list">
+    <h1>Lijst TEEEEST</h1>
+        <div id='example-3'>
+            <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+            <label for="jack">Jack</label>
+            <input type="checkbox" id="john" value="John" v-model="checkedNames">
+            <label for="john">John</label>
+            <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+            <label for="mike">Mike</label>
+            <br>
+            <span>Checked names: {{ checkedNames[0]}} {{ checkedNames[1]}} {{ checkedNames[2]}}</span>
+        </div>
+  </div>    
 </template>
-
 <script>
+export default {
+  name: "list",
+  data() {
+    return {
+      checkedNames: []
+    };
+  },
+  methods: {
+    handleInput: function(e) {
+      console.log(this);
+      console.log(e);
+    }
+  }
+};
 </script>
 
-<style>
+<style scoped>
+.list {
+  padding: 0px 20px 0px 20px;
+  font-size: 1.3em;
+  background-color: #e0edf4;
+  border-left: 5px solid #3eb3f6;
+  margin-bottom: 2px;
+  color: #293546;
+}
 </style>

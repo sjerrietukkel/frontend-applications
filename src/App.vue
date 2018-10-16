@@ -1,10 +1,21 @@
 <template>
   <div id="app">
       <nav>
-        <router-link to="/about">Gezin 1</router-link>
+        <ul>
+          <router-link to="/about">Van der Schuur</router-link>
+        </ul>
+          <router-link to="/about">Lauren</router-link>
+          <router-link to="/about">Daniel</router-link>
+          <router-link to="/about">Benthe</router-link>
+        <ul>
         <router-link to="/">Gezin 2</router-link>
+         </ul>
+        <ul>
         <router-link to="/contact">Gezin 3</router-link>
+         </ul>
+        <ul>
         <router-link to="/list">Gezin 4</router-link>
+         </ul>
       </nav>
     <router-view/>
   </div>
@@ -12,6 +23,7 @@
 
 <script>
 import skills from "./components/Skills.vue";
+import selected from "./components/About.vue";
 import list from "./components/List";
 export default {
   name: "app",
@@ -60,5 +72,17 @@ nav a {
   color: white;
   font-weight: bold;
   margin-right: 15px;
+}
+
+ul {
+  font-size: 18px;
+}
+
+ul .router-link-active {
+  margin-left: 0;
+}
+
+.router-link-active {
+  margin-left: 20%;
 }
 </style>

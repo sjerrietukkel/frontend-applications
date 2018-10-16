@@ -28,6 +28,26 @@ export default new Router({
       path: "/list",
       name: "list",
       component: List
+    },
+    {
+      path: "/list",
+      name: "list",
+      component: List
+    },
+    {
+      path: "/list",
+      name: "list",
+      component: List
+    },
+    {
+      path: "/list",
+      name: "list",
+      component: List
+    },
+    {
+      path: "/list",
+      name: "list",
+      component: List
     }
   ]
 });
