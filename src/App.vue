@@ -8,14 +8,17 @@
           <router-link to="/about">Daniel</router-link>
           <router-link to="/about">Benthe</router-link>
         <ul>
-        <router-link to="/">Gezin 2</router-link>
-         </ul>
+          <router-link to="/">Gezin 2</router-link>
+        </ul>
         <ul>
-        <router-link to="/contact">Gezin 3</router-link>
-         </ul>
+          <router-link to="/contact">Gezin 3</router-link>
+        </ul>
         <ul>
-        <router-link to="/list">Gezin 4</router-link>
-         </ul>
+          <router-link to="/list">Gezin 4</router-link>
+        </ul>
+        <ul>
+          <router-link to="/sidebar">Risico opnieuw</router-link>
+        </ul>
       </nav>
     <router-view/>
   </div>
