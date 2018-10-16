@@ -1,4 +1,4 @@
-# risico
+# Front-end applications
 
 ## Project setup
 
