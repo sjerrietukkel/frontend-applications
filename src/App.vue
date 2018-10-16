@@ -13,7 +13,6 @@
 <script>
 import skills from "./components/Skills.vue";
 import list from "./components/List";
-import country from "./components/Contact";
 export default {
   name: "app",
   components: {
