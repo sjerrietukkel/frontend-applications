@@ -2,11 +2,11 @@
   <div id="app">
       <nav>
         <ul>
-          <router-link to="/about">Van der Schuur</router-link>
+          <li v-on:click="collapse">Van der Schuur</li>
         </ul>
-          <router-link to="/about">Lauren</router-link>
-          <router-link to="/about">Daniel</router-link>
-          <router-link to="/about">Benthe</router-link>
+          <router-link to="/about" class="router-child">Lauren</router-link>
+          <router-link to="/daniel" class="router-child">Daniel</router-link>
+          <router-link to="/benthe" class="router-child">Benthe</router-link>
         <ul>
           <router-link to="/">Gezin 2</router-link>
         </ul>
@@ -32,6 +32,11 @@ export default {
   name: "app",
   components: {
     skills
+  },
+  methods: {
+    collapse: function(event) {
+      alert("Hello " + this.name + "!");
+    }
   }
 };
 </script>
@@ -49,43 +54,40 @@ body {
 #app {
   width: 800px;
 }
-/*
-nav {
-  padding: 20px 20px 20px 0;
-}
-*/
 
 nav {
-  height: 100%; /* 100% Full-height */
+  height: 100%;
   width: 250px;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  background-color: #293546; /* Black*/
-  padding-top: 60px; /* Place content 60px from the top */
+  background-color: #293546;
+  padding-top: 60px;
 }
 
-nav a {
+nav a,
+li {
   padding: 10px;
   display: block;
   text-decoration: none;
   background: #293546;
-  border-radius: 3px;
   color: white;
   font-weight: bold;
-  margin-right: 15px;
 }
 
 ul {
   font-size: 18px;
+  padding-left: 0;
 }
 
-ul .router-link-active {
-  margin-left: 0;
+.router-link-exact-active {
+  color: #ff5d5d;
+  background-color: #35455b;
+  border-left: 3px solid #ff5d5d;
 }
 
-.router-link-active {
-  margin-left: 20%;
+.router-child {
+  padding-left: 20%;
 }
 </style>

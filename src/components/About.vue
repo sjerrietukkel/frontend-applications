@@ -22,6 +22,13 @@ export default {
 
 
 <style>
+.about {
+  background-color: rgb(242, 242, 242);
+  padding: 20px;
+  border-radius: 3px;
+  border-top: 4px solid #ff5d5d;
+}
+
 .dot {
   height: 200px;
   width: 200px;

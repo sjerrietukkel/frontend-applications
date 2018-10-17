@@ -15,18 +15,18 @@
        </div>
    </div>
    <div class="question-container">
-        <div v-for="data in filterCategories">
-            <div @click="stateChange(data)" class="tile question-tile">
+        <div v-for="categorie in filterCategories">
+            <div @click="stateChange(categorie)">
                 <div class="upper-part">
-                    <p>{{ data }}</p>
+                    <p>{{ categorie }}</p>
                     <div class="filled-in">
-                        <p>0%</p>
+                      0%
                     </div>
                 </div>
                 <div class="lower-part">
-                    <div v-if="data == currentCatagory" >
+                    <div v-if="categorie == currentCategory" >
                         <select class="" name="">
-                            <option value="">{{ data }}</option>
+                            <option value="">{{ categorie }}</option>
                         </select>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       myJson: json,
-      currentCatagory: "",
+      currentCategory: "",
       currentOption: []
     };
   },
@@ -65,10 +65,10 @@ export default {
 
   methods: {
     stateChange: function(categorie) {
-      this.currentCatagory = categorie;
-      this.addItemsToCategories(this.currentCatagory);
+      this.currentCategory = categorie;
+      this.addItemsToCategories(this.currentCategory);
 
-      console.log(this.currentCatagory);
+      console.log(this.currentCategory);
     },
 
     // find index by change
@@ -86,9 +86,29 @@ export default {
 };
 </script>
 
+<style scoped>
+a {
+  background-color: #293546;
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
 
+select {
+  border: 1px solid #293546;
+  padding: 5px;
+}
 
+p {
+  color: #1f1f1f;
+  font-size: 16px;
+}
 
-
-<style>
+.risico-container {
+  background-color: rgb(242, 242, 242);
+  padding: 20px;
+  border-radius: 3px;
+  border-top: 4px solid #ff5d5d;
+}
 </style>
