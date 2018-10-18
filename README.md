@@ -33,12 +33,6 @@ vue-template-compiler: ^2.5.17,
 webpack: ^4.20.2
 ```
 
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
 ### Things to improve
 
 ```
