@@ -1,18 +1,6 @@
 <template>
  <div class="totalcontainer">
   <div class="risico-container">
-   <div class="profile-container">
-       <div class="tile profile-tile">
-         <h1>Risico indicatie</h1>
-         <div class="result">
-           <h3>0.078%</h3>
-         </div>
-
-         <p><strong>Gebruiksaanwijzing</strong><p>
-           <p>Vul alle vragen in door de juiste opties te selecteren en druk vervolgens op 
-              "Geef risico indicatie" om een risico indicatie te krijgen.</p>
-       </div>
-   </div>
    <div class="question-container">
         <div v-for="categorie in filterCategories">
             <div @click="stateChange(categorie)">
@@ -26,6 +14,7 @@
                     <div v-if="categorie == currentCategory" >
                         <select class="" name="">
                             <option value="">{{ categorie }}</option>
+                            <option v-for="item in currentOption" value="">{{item.Opties.Antwoord}}</option>
                         </select>
                     </div>
                 </div>
@@ -34,8 +23,7 @@
    </div>
       <button class="save-button">Geef indicatie</button>
    </div> 
-  </div>
- </div>
+</div>
 
 </template>
 
@@ -49,7 +37,7 @@ export default {
       currentOption: []
     };
   },
-
+  /* wordt gerendert voor de pagina wordt geladen */
   computed: {
     filterCategories: function() {
       let categoryNames = [];
@@ -69,7 +57,9 @@ export default {
     stateChange: function(categorie) {
       this.currentCategory = categorie;
       this.addItemsToCategories(this.currentCategory);
-
+      this.currentOption = Object.values(
+        this.addItemsToCategories(this.currentCategory)
+      );
       console.log(this.currentCategory);
     },
 
@@ -83,6 +73,20 @@ export default {
 
       console.log(filteredItems);
       return filteredItems;
+    },
+
+    logThis: function() {
+      json.forEach(question => {
+        let questionSet = [];
+        questionSet.push(question.Vraag);
+        questionSet.push(question.Categorie);
+
+        question.Opties.forEach(answer => {
+          questionSet.push(answer.Antwoord);
+        });
+
+        console.log(questionSet);
+      });
     }
   }
 };

@@ -1,22 +1,29 @@
 # Front-end applications
 
-## How to install
+## Index
+
+1. How to install
+2. Dependencies
+3. Concept and Design Choises
+4. Improvements
+5. Process
+6. Reflection
+7. Resources
+
+### How to install
 
 npm install
 
 ### Dependencies
 
-```
 @babel/polyfill: ^7.0.0-rc.1,
 vee-validate": ^2.1.0-beta.9,
 vue: ^2.5.17,
 vue-router: ^3.0.1,
 vuetify: ^1.2.0
-```
 
-### Dev Dependencies
+#### Dev Dependencies
 
-```
 @babel/core: ^7.1.2,
 @babel/preset-env: ^7.1.0,
 @vue/cli-plugin-babel: ^3.0.5,
@@ -29,7 +36,6 @@ pretty-quick: ^1.7.0,
 vue-cli-plugin-vuetify: ^0.2.1,
 vue-template-compiler: ^2.5.17,
 webpack: ^4.20.2
-```
 
 ### Things to improve
 
@@ -39,7 +45,7 @@ webpack: ^4.20.2
 - Refine questionaire and formula
 - Add breadcrumbs
 
-### Sources
+### Resources
 
 [The Vue Tutorial for 2018 - Learn Vue 2 in 65 Minutes](https://www.youtube.com/watch?v=78tNYZUS-ps)
 
@@ -50,3 +56,5 @@ webpack: ^4.20.2
 ### Process
 
 ### Reflection
+
+I started this course with very little knowledge of JS, and no knowledge of git, NPM and libraries.
