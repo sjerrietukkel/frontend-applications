@@ -134,4 +134,13 @@ p {
   text-align: center;
   margin: 20px;
 }
+select {
+  display: block;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin: 5px;
+}
 </style>
