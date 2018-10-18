@@ -2,9 +2,7 @@
 
 ## How to install
 
-```
 npm install
-```
 
 ### Dependencies
 
