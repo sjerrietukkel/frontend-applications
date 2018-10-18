@@ -44,7 +44,9 @@ npm run build
 ```
 1. Log-in
 2. Add new families/children
-3. Refine questionaire and formula
+3. Add markings
+4. Refine questionaire and formula
+5. Add breadcrumbs
 ```
 
 ## Sources
