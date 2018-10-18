@@ -15,7 +15,7 @@
                       <label v-for="item in currentOption">{{ item.Vraag }}
                         <select class="" name="">
                             <option value="">{{ categorie }}</option>
-                            <option v-for="option in item.Opties" value="">{{ option.Antwoord }}</option>
+                            <option :value="option.Gewicht" v-for="option in item.Opties" value="">{{ option.Antwoord }}</option>
                         </select>
                       </label>
                     </div>
