@@ -7,7 +7,6 @@
                 <div class="upper-part">
                     <p>{{ categorie }}</p>
                     <div class="filled-in">
-
                     </div>
                 </div>
                 <div class="lower-part">
@@ -23,7 +22,7 @@
             </div>
         </div>
    </div>
-      <button class="save-button">Geef indicatie</button>
+      <p id="percentage">0%</p>
    </div> 
 </div>
 
@@ -71,6 +70,20 @@ export default {
       this.weight[targetID] = element.target.value;
       var valueArrays = Object.values(this.weight);
       console.log(this.weight);
+
+      var calc = calculated(valueArrays);
+
+      var calculatedResult = document.querySelector("#percentage");
+      percentage.textContent = calc + "%";
+
+      function calculated(valueArrays) {
+        var sum = valueArrays.reduce(function(totaal, currentValue) {
+          return Number(totaal) + Number(currentValue);
+        }, 0);
+        return Number(
+          ((1 / (1 + Math.exp(-1 * (-8.57219 + sum)))) * 100).toFixed(2)
+        );
+      }
     },
 
     // find index by change
