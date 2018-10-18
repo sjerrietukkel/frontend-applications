@@ -3,18 +3,19 @@
 ## Index
 
 1. How to install
-2. Dependencies
-3. Concept and Design Choises
-4. Improvements
-5. Process
-6. Reflection
-7. Resources
+   <!-- 2. Dependencies -->
+2. Concept and Design Choices
+3. Improvements
+4. Process
+5. Reflection
+6. Resources
 
 ## How to install
 
+Download or clone this repository
 npm install
 
-## Dependencies
+<!-- ## Dependencies
 
 - @babel/polyfill: ^7.0.0-rc.1,
 - vee-validate": ^2.1.0-beta.9,
@@ -35,7 +36,9 @@ npm install
 - pretty-quick: ^1.7.0,
 - vue-cli-plugin-vuetify: ^0.2.1,
 - vue-template-compiler: ^2.5.17,
-- webpack: ^4.20.2
+- webpack: ^4.20.2 -->
+
+## Concept and Design Choices
 
 ## Things to improve
 
@@ -52,6 +55,8 @@ npm install
 [Sidebar](https://lusaxweb.github.io/vuesax/components/sideBar.html#default)
 
 [Formule](https://alligator.io/vuejs/computed-properties/)
+
+[JSON import](https://stackoverflow.com/questions/45565349/how-to-acces-external-json-file-objects-in-vue-js-app)
 
 ## Process
 
