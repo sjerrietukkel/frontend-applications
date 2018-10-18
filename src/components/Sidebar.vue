@@ -13,9 +13,9 @@
                 <div class="lower-part">
                     <div v-if="categorie == currentCategory" >
                       <label v-for="item in currentOption">{{ item.Vraag }}
-                        <select class="" name="">
+                        <select class="" name="" @change="handleValue" :data-id="item.id">
                             <option value="">{{ categorie }}</option>
-                            <option :value="option.Gewicht" v-for="option in item.Opties" value="">{{ option.Antwoord }}</option>
+                            <option :value="option.Gewicht" v-for="option in item.Opties">{{ option.Antwoord }}</option>
                         </select>
                       </label>
                     </div>
@@ -36,10 +36,11 @@ export default {
     return {
       myJson: json,
       currentCategory: "",
-      currentOption: []
+      currentOption: [],
+      weight: new Object() /* maakt een numerieke waarde */
     };
   },
-  /* wordt gerendert voor de pagina wordt geladen */
+  /* wordt gerendered voor de pagina wordt geladen */
   computed: {
     filterCategories: function() {
       let categoryNames = [];
@@ -63,6 +64,13 @@ export default {
         this.addItemsToCategories(this.currentCategory)
       );
       console.log(this.currentCategory);
+    },
+
+    handleValue: function(element) {
+      var targetID = element.target.getAttribute("data-id");
+      this.weight[targetID] = element.target.value;
+      var valueArrays = Object.values(this.weight);
+      console.log(this.weight);
     },
 
     // find index by change
