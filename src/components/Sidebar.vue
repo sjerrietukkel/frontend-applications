@@ -12,10 +12,12 @@
                 </div>
                 <div class="lower-part">
                     <div v-if="categorie == currentCategory" >
+                      <label v-for="item in currentOption">{{ item.Vraag }}
                         <select class="" name="">
                             <option value="">{{ categorie }}</option>
-                            <option v-for="item in currentOption" value="">{{item.Opties.Antwoord}}</option>
+                            <option v-for="option in item.Opties" value="">{{ option.Antwoord }}</option>
                         </select>
+                      </label>
                     </div>
                 </div>
             </div>
@@ -77,7 +79,7 @@ export default {
 
     logThis: function() {
       json.forEach(question => {
-        let questionSet = [];
+        // let questionSet = [];
         questionSet.push(question.Vraag);
         questionSet.push(question.Categorie);
 
