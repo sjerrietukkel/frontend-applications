@@ -1,6 +1,6 @@
 # Front-end applications
 
-## Project setup
+## How to install
 
 ```
 npm install
@@ -39,10 +39,12 @@ webpack: ^4.20.2
 npm run build
 ```
 
-### Run your tests
+### Things to improve
 
 ```
-npm run test
+1. Log-in
+2. Add new families/children
+3. Refine questionaire and formula
 ```
 
 ## Sources
