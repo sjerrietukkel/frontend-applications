@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <nav>
+      <aside>
         <ul>
           <li v-on:click="collapse">Van der Schuur</li>
         </ul>
@@ -19,7 +19,7 @@
         <ul>
           <router-link to="/sidebar">Risico opnieuw</router-link>
         </ul>
-      </nav>
+      </aside>
     <router-view/>
   </div>
 </template>
@@ -44,21 +44,21 @@ export default {
 <style>
 body {
   background-color: #e6e6e6;
-  font-family: "Montserrat", sans-serif;
-  display: grid;
+  font-family: "Arial", sans-serif;
   grid-template-rows: auto;
   justify-items: center;
   padding-top: 50px;
 }
 
 #app {
-  width: 800px;
+  width: 100%;
 }
 
-nav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
+aside {
+  display: block;
+  height: 100vw;
+  width: 200px;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -66,7 +66,7 @@ nav {
   padding-top: 60px;
 }
 
-nav a,
+aside a,
 li {
   padding: 10px;
   display: block;

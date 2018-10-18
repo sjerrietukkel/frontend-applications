@@ -6,10 +6,31 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Dependencies
 
 ```
-npm run serve
+babel/polyfill: "^7.0.0-rc.1,
+vee-validate": ^2.1.0-beta.9,
+vue: ^2.5.17,
+vue-router: ^3.0.1,
+vuetify: ^1.2.0
+```
+
+### Dev Dependencies
+
+```
+"@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "babel-loader": "^8.0.4",
+    "husky": "^1.1.2",
+    "prettier": "1.14.3",
+    "pretty-quick": "^1.7.0",
+    "vue-cli-plugin-vuetify": "^0.2.1",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.2"
 ```
 
 ### Compiles and minifies for production

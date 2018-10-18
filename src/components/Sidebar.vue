@@ -1,5 +1,6 @@
 <template>
- <div class="risico-container">
+ <div class="totalcontainer">
+  <div class="risico-container">
    <div class="profile-container">
        <div class="tile profile-tile">
          <h1>Risico indicatie</h1>
@@ -8,10 +9,8 @@
          </div>
 
          <p><strong>Gebruiksaanwijzing</strong><p>
-           <p>Vul alle vragen in door de juiste opties te selecteren en druk vervolgens op "Geef risico indicatie" om een risico indicatie te krijgen.</p>
-           <a src="/" class="save-button button">
-             Opslaan
-           </a>
+           <p>Vul alle vragen in door de juiste opties te selecteren en druk vervolgens op 
+              "Geef risico indicatie" om een risico indicatie te krijgen.</p>
        </div>
    </div>
    <div class="question-container">
@@ -20,7 +19,7 @@
                 <div class="upper-part">
                     <p>{{ categorie }}</p>
                     <div class="filled-in">
-                      0%
+
                     </div>
                 </div>
                 <div class="lower-part">
@@ -33,6 +32,9 @@
             </div>
         </div>
    </div>
+      <button class="save-button">Geef indicatie</button>
+   </div> 
+  </div>
  </div>
 
 </template>
@@ -87,17 +89,19 @@ export default {
 </script>
 
 <style scoped>
-a {
+.save-button {
   background-color: #293546;
   border-radius: 3px;
   padding: 10px;
   color: white;
-  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 select {
   border: 1px solid #293546;
-  padding: 5px;
+  padding: 5px 15px;
 }
 
 p {
@@ -110,5 +114,18 @@ p {
   padding: 20px;
   border-radius: 3px;
   border-top: 4px solid #ff5d5d;
+  width: 60%;
+  margin-left: 15%;
+}
+
+.upper-part {
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lower-part {
+  text-align: center;
+  margin: 20px;
 }
 </style>
