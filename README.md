@@ -10,11 +10,11 @@
 6. Reflection
 7. Resources
 
-### How to install
+## How to install
 
 npm install
 
-### Dependencies
+## Dependencies
 
 @babel/polyfill: ^7.0.0-rc.1,
 vee-validate": ^2.1.0-beta.9,
@@ -37,7 +37,7 @@ vue-cli-plugin-vuetify: ^0.2.1,
 vue-template-compiler: ^2.5.17,
 webpack: ^4.20.2
 
-### Things to improve
+## Things to improve
 
 - Log-in
 - Add new families/children
@@ -45,7 +45,7 @@ webpack: ^4.20.2
 - Refine questionaire and formula
 - Add breadcrumbs
 
-### Resources
+## Resources
 
 [The Vue Tutorial for 2018 - Learn Vue 2 in 65 Minutes](https://www.youtube.com/watch?v=78tNYZUS-ps)
 
@@ -53,8 +53,8 @@ webpack: ^4.20.2
 
 [Formule](https://alligator.io/vuejs/computed-properties/)
 
-### Process
+## Process
 
-### Reflection
+## Reflection
 
 I started this course with very little knowledge of JS, and no knowledge of git, NPM and libraries.
