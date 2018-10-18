@@ -22,8 +22,12 @@
             </div>
         </div>
    </div>
-      <p id="percentage">0%</p>
+     
    </div> 
+  <div class="percentage-container">
+      <h1>Risico Indicatie</h1>
+       <h2 id="percentage">0%</h2>
+    </div>
 </div>
 
 </template>
@@ -116,16 +120,6 @@ export default {
 </script>
 
 <style scoped>
-.save-button {
-  background-color: #293546;
-  border-radius: 3px;
-  padding: 10px;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
 select {
   border: 1px solid #293546;
   padding: 5px 15px;
@@ -136,32 +130,59 @@ p {
   font-size: 16px;
 }
 
+.totalcontainer {
+  display: flex;
+}
+
 .risico-container {
   background-color: rgb(242, 242, 242);
   padding: 20px;
   border-radius: 3px;
   border-top: 4px solid #ff5d5d;
-  width: 60%;
-  margin-left: 15%;
+  width: 400px;
+  margin-left: 250px;
 }
 
 .upper-part {
   margin: 10px;
   font-weight: bold;
-  text-align: center;
 }
 
 .lower-part {
-  text-align: center;
-  margin: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 select {
   display: block;
-  margin: 0 auto;
+  width: 20em;
+  text-align: center;
+  margin-left: 0;
 }
 
 label {
   display: block;
   margin: 5px;
+  margin-left: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 8em;
+  border-top: #ff5d5d solid 3px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.percentage-container {
+  margin-left: 30px;
+  background-color: rgb(242, 242, 242);
+  padding: 20px;
+  border-radius: 3px;
+  border-top: 4px solid #ff5d5d;
+  width: 400px;
+  height: 400px;
 }
 </style>

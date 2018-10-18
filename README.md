@@ -43,6 +43,7 @@ npm install
 ## Things to improve
 
 - Log-in
+- Add collapsable menu/menu-items
 - Add new families/children
 - Add markings
 - Refine questionaire and formula

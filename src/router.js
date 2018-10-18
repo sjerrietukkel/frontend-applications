@@ -4,14 +4,14 @@ import Skills from "./components/Skills.vue";
 import About from "./components/About.vue";
 import Contact from "./components/Contact.vue";
 import List from "./components/List.vue";
-import Sidebar from "./components/Sidebar.vue";
+import Risico from "./components/Risico.vue";
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: "/",
+      path: "/skills",
       name: "skills",
       component: Skills
     },
@@ -21,9 +21,9 @@ export default new Router({
       component: About
     },
     {
-      path: "/sidebar",
-      name: "sidebar",
-      component: Sidebar
+      path: "/",
+      name: "risico",
+      component: Risico
     },
     {
       path: "/contact",

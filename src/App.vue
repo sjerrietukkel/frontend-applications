@@ -17,7 +17,7 @@
           <router-link to="/list">Gezin 4</router-link>
         </ul>
         <ul>
-          <router-link to="/sidebar">Risico opnieuw</router-link>
+          <router-link to="/risico">Risico opnieuw</router-link>
         </ul>
       </aside>
     <router-view/>
