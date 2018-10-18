@@ -34,26 +34,26 @@ webpack: ^4.20.2
 ### Things to improve
 
 ```
-1. Log-in
-2. Add new families/children
-3. Add markings
-4. Refine questionaire and formula
-5. Add breadcrumbs
+⋅⋅* Log-in
+⋅⋅* Add new families/children
+⋅⋅* Add markings
+⋅⋅* Refine questionaire and formula
+⋅⋅* Add breadcrumbs
 ```
 
 ### Sources
 
 ```
 The Vue Tutorial for 2018 - Learn Vue 2 in 65 Minutes
-https://www.youtube.com/watch?v=78tNYZUS-ps
+(https://www.youtube.com/watch?v=78tNYZUS-ps)
 
 Sidebar
-https://lusaxweb.github.io/vuesax/components/sideBar.html#default
+(https://lusaxweb.github.io/vuesax/components/sideBar.html#default)
 
 Formule
-https://alligator.io/vuejs/computed-properties/
+(https://alligator.io/vuejs/computed-properties/)
 ```
 
 ### Process
 
-### Reflection
+### Reflectionrea
