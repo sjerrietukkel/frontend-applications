@@ -76,8 +76,18 @@ Ik heb besloten om het geheel van de vragenlijst op te hakken in stukken, zodat 
 
 [Maximilian(Academind)](https://www.youtube.com/watch?v=4lk9-PYensI&t=446s)
 
+Documentatie van Project Tech (CMD 2018)
+
 ## Process
+
+Gedurende het project kwamen er gastsprekers langs omte vertellen over frameworks en het werk dat huklpverleners doen. De eerste gastsprekers gingen het hebben over de drie populairste frameworks van het moment: React, Angular & Vue. Ze benoemden de voor- en nadelen en hadden het over de use cases en instapniveaus. Na deze presentaties heb ik voor Vue gekozen, dit framework had de minst hoge instapdrempel van de drie en beschikt over een erg uitgebreide duidelijke documentatie. Dit sprak me als beginneling erg aan.
+
+Ook waren er sprekers van de jeugdzorg die uitlegde wat hun werk inhield, problemen waar ze tegenaan liepen en hoe een app als de Risico Indicatie hen daarbij kon helpen. Aan de hand hiervan heb ik het bovenstaande concept uitgewerkt. Het werd tijd om het te gaan realiseren in code.
+
+Hier ben ik begonnen met het kijken van heel veel tutorials, beginnend met kleine dingen om de syntax onder de knie te krijgen. Ik liep hier tegen veel problemen aan, en pas toen ik samen met klasgenoten hieraan ging werken kreeg ik begrip van wat de code deed en waarom het dat deed.
 
 ## Reflection
 
-I started this course with very little knowledge of JS, and no knowledge of git, NPM and libraries.
+Ik begon dit vak met 0 kennis over libraries, nodejs, CLI en git. Ook wist ik vrijwel niks over JS (m.u.v. de héle basis dingen). Dit maakte het een bijzonder lastig vak voor me. Ik liep tegen veel dingen aan die ik niet zelf (of met turorials) wist op te lossen. Pas toen ik samen met klasgenoten aan deze problemen ging zitten begin het te dagen, maar ik heb nog niet het idee dat ik het helemaal onder de knie heb. Ik kan bijvoorbeeld nog niet zelfstandig een functie schrijven, content uit een json file extracten of met localstorage werken.
+
+Het was echter wel een zeer interessant vak, omdat ik meer begrip heb van het web en hoe je het best een project aanpakt. Ik heb wel het idee dat ik op dit moment veel heb geleerd over js, Vue en node.js.
