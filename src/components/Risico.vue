@@ -44,6 +44,7 @@
 </template>
 
 <script>
+//Samen gewerkt met Mitch & May
 import json from "../data.json";
 export default {
   data() {
