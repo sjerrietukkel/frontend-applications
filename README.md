@@ -42,6 +42,15 @@ npm install
 
 ![alt text](https://github.com/sjerrietukkel/frontend-applications/blob/master/src/images/sketch_concept.png "Concept gemaakt na de sprekers van de jeugdzorg")
 
+Na meerder presentaties van jeugdzorgwerken kwamen er de volgende punten naar boven die ik interesssant vond voor het project:
+
+- Het tonen van welke opties zwaar wegen.
+- Het tonen van de stappen die de jeugdhulp hierna kan ondernemen.
+- Hulpverleners werken met gezinnen en hebben een gemiddelde van 21 kinderen.
+- Hulpverleners vinden de ARIJ een sleur om in te vullen.
+- Hulpverleners kunnen geen aantekeningen maken op de ARIJ.
+- Hulpverleners maken korte aantekeningen van het gesprek met het kind/ouders, en verwerken deze op een later tijdstip.
+
 ## Things to improve
 
 - Log-in
