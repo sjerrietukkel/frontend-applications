@@ -12,10 +12,10 @@
           <router-link to="/gezin2">Gezin 2</router-link>
         </ul>
         <ul>
-          <router-link to="/contact">Gezin 3</router-link>
+          <router-link to="/gezin3">Gezin 3</router-link>
         </ul>
         <ul>
-          <router-link to="/contact">Gezin 4</router-link>
+          <router-link to="/gezin4">Gezin 4</router-link>
         </ul>
         <ul>
           <router-link to="/introductie">Introductie</router-link>
