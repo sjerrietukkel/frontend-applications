@@ -17,8 +17,8 @@
     </div>
   <div class="risico-container">
    <div class="question-container">
-        <h1>Kind 1</h1>
-        <div v-for="categorie in filterCategories">
+        <h1>Kind 3</h1>
+        <div v-for="categorie in filterCategories" v-bind:key="categorie">
             <div @click="stateChange(categorie)">
                 <div class="upper-part">
                     <p>{{ categorie }}</p>
@@ -27,10 +27,10 @@
                 </div>
                 <div class="lower-part">
                     <div v-if="categorie == currentCategory" >
-                      <label v-for="item in currentOption">{{ item.Vraag }}
+                      <label v-for="item in currentOption" v-bind:key="item.currentOption">{{ item.Vraag }}
                         <select class="" name="" @change="handleValue" :data-id="item.id">
                             <option value="" disabled selected>Kies optie</option>
-                            <option :value="option.Gewicht" v-for="option in item.Opties">{{ option.Antwoord }}</option>
+                            <option :value="option.Gewicht" v-for="option in item.Opties" :key="option.Antwoord">{{ option.Antwoord }}</option>
                         </select>
                       </label>
                     </div>
