@@ -1,14 +1,15 @@
 <template>
   <div id="app">
       <aside>
+        <h3>Hulpverlener</h3>
         <ul>
-          <li v-on:click="collapse">Van der Schuur</li>
+          <li>Gezin 1</li>
         </ul>
-          <router-link to="/about" class="router-child">Lauren</router-link>
-          <router-link to="/daniel" class="router-child">Daniel</router-link>
-          <router-link to="/benthe" class="router-child">Benthe</router-link>
+          <router-link to="/" class="router-child">Kind 1</router-link>
+          <router-link to="/kind2" class="router-child">Kind 2</router-link>
+          <router-link to="/kind3" class="router-child">Kind 3</router-link>
         <ul>
-          <router-link to="/">Gezin 2</router-link>
+          <router-link to="/gezin2">Gezin 2</router-link>
         </ul>
         <ul>
           <router-link to="/contact">Gezin 3</router-link>
@@ -17,7 +18,13 @@
           <router-link to="/list">Gezin 4</router-link>
         </ul>
         <ul>
-          <router-link to="/risico">Risico opnieuw</router-link>
+          <router-link to="/introductie">Introductie</router-link>
+        </ul>
+        <ul>
+          <router-link to="/traject">Trajectkeuze</router-link>
+        </ul>
+        <ul>
+          <router-link to="/about">Over</router-link>
         </ul>
       </aside>
     <router-view/>
@@ -56,14 +63,14 @@ body {
 
 aside {
   display: block;
-  height: 100vw;
+  height: 100%;
   width: 200px;
   position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #293546;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 aside a,
@@ -77,7 +84,7 @@ li {
 }
 
 ul {
-  font-size: 18px;
+  font-size: 1.2em;
   padding-left: 0;
 }
 
@@ -89,5 +96,24 @@ ul {
 
 .router-child {
   padding-left: 20%;
+}
+
+ul:nth-of-type(5) {
+  margin-top: 22em;
+}
+
+ul:nth-of-type(5),
+ul:nth-of-type(6),
+ul:nth-of-type(7) {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
 }
 </style>

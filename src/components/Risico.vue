@@ -1,7 +1,15 @@
 <template>
  <div class="totalcontainer">
+     <div class="percentage-container">
+      <h1>Risico Indicatie</h1>
+       <h2 id="percentage">0%</h2>
+       <p>0 - 2%: Laag risico</p>
+       <p>2 - 5%: Middelmatig risico</p>
+       <p>5% en hoger: Hoog risico</p>
+    </div>
   <div class="risico-container">
    <div class="question-container">
+        <h1>Kind 1</h1>
         <div v-for="categorie in filterCategories">
             <div @click="stateChange(categorie)">
                 <div class="upper-part">
@@ -13,7 +21,7 @@
                     <div v-if="categorie == currentCategory" >
                       <label v-for="item in currentOption">{{ item.Vraag }}
                         <select class="" name="" @change="handleValue" :data-id="item.id">
-                            <option value="">{{ categorie }}</option>
+                            <option value="" disabled selected>Kies optie</option>
                             <option :value="option.Gewicht" v-for="option in item.Opties">{{ option.Antwoord }}</option>
                         </select>
                       </label>
@@ -23,13 +31,6 @@
         </div>
    </div>
   </div> 
-  <div class="percentage-container">
-      <h1>Risico Indicatie</h1>
-       <h2 id="percentage">0%</h2>
-       <p>0 - 2%: Laag risico</p>
-       <p>2 - 5%: Middelmatig risico</p>
-       <p>5% en hoger: Hoog risico</p>
-    </div>
 </div>
 
 </template>
@@ -45,7 +46,8 @@ export default {
       weight: new Object() /* maakt een numerieke waarde */
     };
   },
-  /* wordt gerendered voor de pagina wordt geladen */
+
+  // wordt gerendered voor de pagina wordt geladen. geholpen door Tim
   computed: {
     filterCategories: function() {
       let categoryNames = [];
@@ -71,12 +73,14 @@ export default {
       console.log(this.currentCategory);
     },
 
+    // Eerste gedeelte haalt de waarde op uit het json bestand, logt deze en stopt hem in een array. Hulp van Dennis
     handleValue: function(element) {
       var targetID = element.target.getAttribute("data-id");
       this.weight[targetID] = element.target.value;
       var valueArrays = Object.values(this.weight);
       console.log(this.weight);
 
+      // Haalt de waardes door de formule en toont de som op de plek van #percentage
       var calc = calculated(valueArrays);
 
       var calculatedResult = document.querySelector("#percentage");
@@ -128,7 +132,7 @@ select {
 }
 
 p {
-  color: #1f1f1f;
+  color: #293546;
   font-size: 16px;
 }
 
@@ -142,7 +146,7 @@ p {
   border-radius: 3px;
   border-top: 4px solid #ff5d5d;
   width: 400px;
-  margin-left: 250px;
+  margin-left: 30px;
 }
 
 .upper-part {
@@ -155,6 +159,8 @@ p {
   margin-top: 10px;
 }
 select {
+  margin-top: 10px;
+  margin-bottom: 5px;
   display: block;
   width: 20em;
   text-align: center;
@@ -169,6 +175,7 @@ label {
 
 h1 {
   text-align: center;
+  color: #293546;
 }
 
 h2 {
@@ -176,10 +183,11 @@ h2 {
   padding-top: 10px;
   text-align: center;
   margin-bottom: 0.5em;
+  color: #293546;
 }
 
 .percentage-container {
-  margin-left: 30px;
+  margin-left: 250px;
   background-color: rgb(242, 242, 242);
   padding: 20px;
   border-radius: 3px;
