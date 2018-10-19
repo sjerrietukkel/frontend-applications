@@ -6,8 +6,8 @@
           <li>Gezin 1</li>
         </ul>
           <router-link to="/" class="router-child">Kind 1</router-link>
-          <router-link to="/kind2" class="router-child">Kind 2</router-link>
-          <router-link to="/kind3" class="router-child">Kind 3</router-link>
+          <router-link to="/list" class="router-child">Kind 2</router-link>
+          <router-link to="/contact" class="router-child">Kind 3</router-link>
         <ul>
           <router-link to="/gezin2">Gezin 2</router-link>
         </ul>
@@ -15,7 +15,7 @@
           <router-link to="/contact">Gezin 3</router-link>
         </ul>
         <ul>
-          <router-link to="/list">Gezin 4</router-link>
+          <router-link to="/contact">Gezin 4</router-link>
         </ul>
         <ul>
           <router-link to="/introductie">Introductie</router-link>
