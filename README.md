@@ -51,6 +51,10 @@ Na meerder presentaties van jeugdzorgwerken kwamen er de volgende punten naar bo
 - Hulpverleners kunnen geen aantekeningen maken op de ARIJ.
 - Hulpverleners maken korte aantekeningen van het gesprek met het kind/ouders, en verwerken deze op een later tijdstip.
 
+In de sidebar staan de gezinnen die de hulpverlener op het moment heeft. Hier kunnen ook gezinnen aan wordne toegevoegd of worden gearchiveerd. Per kind kan de hulpverlener 'flags' geven, net als in een e-mailapplicatie. Hiermee kan worden getoond of er nog gegevens moeten worden ingevuld of niet compleet zijn.
+
+Ik heb besloten om het geheel van de vragenlijst op te hakken in stukken, zodat deze makkelijker verwerkbaar is voor de hulpverlener. De app geeft hen de ruimte om aantekeningen per kind te maken als toevoeging op de vragenlijst. De app slaat de gegevens van de gezinnen en kinderen op in het account van de hulpverlener
+
 ## Things to improve
 
 - Log-in
