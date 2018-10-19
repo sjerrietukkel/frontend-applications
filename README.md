@@ -78,7 +78,7 @@ Ik heb besloten om het geheel van de vragenlijst op te hakken in stukken, zodat 
 
 Documentatie van Project Tech (CMD 2018)
 
-Klasgenoten
+Klasgenoten (May, Mitch, Dennis, Tim)
 
 ## Process
 
