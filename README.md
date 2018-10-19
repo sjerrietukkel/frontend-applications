@@ -88,6 +88,8 @@ Ook waren er sprekers van de jeugdzorg die uitlegde wat hun werk inhield, proble
 
 Hier ben ik begonnen met het kijken van heel veel tutorials, beginnend met kleine dingen om de syntax onder de knie te krijgen. Ik liep hier tegen veel problemen aan, en pas toen ik samen met klasgenoten hieraan ging werken kreeg ik begrip van wat de code deed en waarom het dat deed.
 
+Uiteindelijk heb ik na veel gestress de formule werkend in mijn code gekregen, iets wat ik aan het begin van de week niet van had durven dromen
+
 ## Reflection
 
 Ik begon dit vak met 0 kennis over libraries, nodejs, CLI en git. Ook wist ik vrijwel niks over JS (m.u.v. de héle basis dingen). Dit maakte het een bijzonder lastig vak voor me. Ik liep tegen veel dingen aan die ik niet zelf (of met turorials) wist op te lossen. Pas toen ik samen met klasgenoten aan deze problemen ging zitten begin het te dagen, maar ik heb nog niet het idee dat ik het helemaal onder de knie heb. Ik kan bijvoorbeeld nog niet zelfstandig een functie schrijven, content uit een json file extracten of met localstorage werken.
