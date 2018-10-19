@@ -3,19 +3,19 @@
 ## Index
 
 1. How to install
-   <!-- 2. Dependencies -->
-2. Concept and Design Choices
-3. Improvements
-4. Process
-5. Reflection
-6. Resources
+2. Dependencies
+3. Concept and Design Choices
+4. Improvements
+5. Process
+6. Reflection
+7. Resources
 
 ## How to install
 
 Download or clone this repository
 npm install
 
-<!-- ## Dependencies
+## Dependencies
 
 - @babel/polyfill: ^7.0.0-rc.1,
 - vee-validate": ^2.1.0-beta.9,
@@ -58,6 +58,8 @@ npm install
 [Formule](https://alligator.io/vuejs/computed-properties/)
 
 [JSON import](https://stackoverflow.com/questions/45565349/how-to-acces-external-json-file-objects-in-vue-js-app)
+
+[Maximilian(Academind)](https://www.youtube.com/watch?v=4lk9-PYensI&t=446s)
 
 ## Process
 

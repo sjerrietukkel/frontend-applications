@@ -22,11 +22,13 @@
             </div>
         </div>
    </div>
-     
-   </div> 
+  </div> 
   <div class="percentage-container">
       <h1>Risico Indicatie</h1>
        <h2 id="percentage">0%</h2>
+       <p>0 - 2%: Laag risico</p>
+       <p>2 - 5%: Middelmatig risico</p>
+       <p>5% en hoger: Hoog risico</p>
     </div>
 </div>
 
@@ -171,9 +173,9 @@ h1 {
 
 h2 {
   font-size: 8em;
-  border-top: #ff5d5d solid 3px;
   padding-top: 10px;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 .percentage-container {
@@ -184,5 +186,9 @@ h2 {
   border-top: 4px solid #ff5d5d;
   width: 400px;
   height: 400px;
+}
+
+.percentage-container p {
+  text-align: center;
 }
 </style>
