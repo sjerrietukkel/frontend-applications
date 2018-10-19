@@ -78,6 +78,8 @@ Ik heb besloten om het geheel van de vragenlijst op te hakken in stukken, zodat 
 
 Documentatie van Project Tech (CMD 2018)
 
+Klasgenoten
+
 ## Process
 
 Gedurende het project kwamen er gastsprekers langs omte vertellen over frameworks en het werk dat huklpverleners doen. De eerste gastsprekers gingen het hebben over de drie populairste frameworks van het moment: React, Angular & Vue. Ze benoemden de voor- en nadelen en hadden het over de use cases en instapniveaus. Na deze presentaties heb ik voor Vue gekozen, dit framework had de minst hoge instapdrempel van de drie en beschikt over een erg uitgebreide duidelijke documentatie. Dit sprak me als beginneling erg aan.
