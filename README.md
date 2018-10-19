@@ -1,4 +1,4 @@
-# Front-end applications Risico-indicatie
+# Front-end applications - Risico-indicatie
 
 ## Index
 
