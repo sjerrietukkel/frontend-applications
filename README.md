@@ -82,7 +82,7 @@ Klasgenoten (May, Mitch, Dennis, Tim)
 
 ## Process
 
-Gedurende het project kwamen er gastsprekers langs omte vertellen over frameworks en het werk dat huklpverleners doen. De eerste gastsprekers gingen het hebben over de drie populairste frameworks van het moment: React, Angular & Vue. Ze benoemden de voor- en nadelen en hadden het over de use cases en instapniveaus. Na deze presentaties heb ik voor Vue gekozen, dit framework had de minst hoge instapdrempel van de drie en beschikt over een erg uitgebreide duidelijke documentatie. Dit sprak me als beginneling erg aan.
+Gedurende het project kwamen er gastsprekers langs om te vertellen over frameworks en het werk dat huklpverleners doen. De eerste gastsprekers gingen het hebben over de drie populairste frameworks van het moment: React, Angular & Vue. Ze benoemden de voor- en nadelen en hadden het over de use cases en instapniveaus. Na deze presentaties heb ik voor Vue gekozen, dit framework had de minst hoge instapdrempel van de drie en beschikt over een erg uitgebreide duidelijke documentatie. Dit sprak me als beginneling erg aan.
 
 De opdrachtgever was Garage 2020, zij houden zich bezig met het de jeugdzorg en hoe technologie daar bij kan helpen. D.m.v. data van de afgelopen maken hebben ze een formule ontwikkeld waarmee met een 99.5% zekerheid kan worden voorspeld of een kind uit huis wordt gezet. Dit was het startpunt van ons project.
 
