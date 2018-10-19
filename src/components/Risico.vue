@@ -6,6 +6,14 @@
        <p>0 - 2%: Laag risico</p>
        <p>2 - 5%: Middelmatig risico</p>
        <p>5% en hoger: Hoog risico</p>
+       <v-flex>
+              <v-textarea
+                box
+                value=""
+                label='Notities'
+                id='notities'>
+              </v-textarea>
+      </v-flex>
     </div>
   <div class="risico-container">
    <div class="question-container">
@@ -133,7 +141,7 @@ select {
 
 p {
   color: #293546;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .totalcontainer {
@@ -171,6 +179,7 @@ label {
   display: block;
   margin: 5px;
   margin-left: 0;
+  font-size: 1em;
 }
 
 h1 {
@@ -193,10 +202,15 @@ h2 {
   border-radius: 3px;
   border-top: 4px solid #ff5d5d;
   width: 400px;
-  height: 400px;
+  height: auto;
 }
 
 .percentage-container p {
   text-align: center;
+}
+
+.flex {
+  margin-top: 4em;
+  margin-bottom: 0;
 }
 </style>
