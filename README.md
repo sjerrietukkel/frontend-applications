@@ -40,6 +40,8 @@ npm install
 
 ## Concept and Design Choices
 
+![alt text](https://github.com/sjerrietukkel/frontend-applications/blob/master/src/images/sketch_concept.png "Concept gemaakt na de sprekers van de jeugdzorg")
+
 ## Things to improve
 
 - Log-in
